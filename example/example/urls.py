@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+import core.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('assets/', core.views.AssetListView.as_view(), name='asset-list-web'),
+    path('assets/<int:pk>/', core.views.AssetDetailView.as_view(), name='asset-detail-web'),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

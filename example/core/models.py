@@ -13,4 +13,4 @@ class Asset(models.Model, ):
     Represents an sample Asset.
     """
 
-    original = IIIFField(null=True, blank=True, )
+    original = IIIFField(null=True, blank=True, upload_to='media')
