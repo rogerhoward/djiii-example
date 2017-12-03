@@ -2,3 +2,4 @@ django
 djiiif
 django-extensions
 Werkzeug
+Pillow

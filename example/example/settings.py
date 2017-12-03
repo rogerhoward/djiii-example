@@ -120,3 +120,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+
+IIIF_HOST = 'http://server/'
+
+IIIF_PROFILES = {
+    'thumbnail':
+        {'host': IIIF_HOST, 
+        'region': 'full', 
+        'size': '150,',
+        'rotation': '0',
+        'quality': 'default',
+        'format': 'jpg'}
+}
