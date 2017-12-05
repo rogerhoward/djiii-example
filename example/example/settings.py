@@ -24,9 +24,7 @@ SECRET_KEY = '1ulu(7rcj2dkcrnh0pc=r%eh(=p++akh^(_)o*+qul@yijhj+8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -38,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'core'
+    'core',
+    'djiiif'
 ]
 
 MIDDLEWARE = [
@@ -107,12 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 

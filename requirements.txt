@@ -1,5 +1,7 @@
 django
-djiiif
 django-extensions
 Werkzeug
 Pillow
+
+
+git+git://github.com/rogerhoward/djiiif.git@33de5784bc0af5ba508267e92f5e1bd2dbb7ab07

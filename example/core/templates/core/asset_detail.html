@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% load iiiftags %}
+
+{% block title %}{{ asset }}
+{% endblock title %}
+
+{% block css %}
+    
+{% endblock css %}
+
+{% block content %}
+<br><br>
+<br><br>
+<br><br>
+
+
+  <h2>{{ asset.original.iiif.thumbnail }}</h2>
+
+
+  {% iiif asset.original 'thumbnail' %}
+
+{% endblock content %}
+
+{% block js %}
+{% endblock js %}
